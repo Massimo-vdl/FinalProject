@@ -30,7 +30,7 @@ System.out.println("Adding " + SECOND_AMOUNT +
 // and display the results. 
 balance = balance.subtract(THIRD_AMOUNT); 
 System.out.println("Subtracting " + THIRD_AMOUNT + 
-" gives " + balance); 
+" gives " + balance.toString()); 
 // Determine if the second amount equals 
 // the first amount and store the result. 
 boolean equal = SECOND_AMOUNT.equals(FIRST_AMOUNT); 
