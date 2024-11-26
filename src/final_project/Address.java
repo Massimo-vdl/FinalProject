@@ -25,22 +25,19 @@ Constructor
 @param zipCode Describes the zip code. 
 */ 
 public Address(String road, String town, String st, 
-String zipCode) 
-{ 
+String zipCode) { 
 
-street = road; 
-city = town; 
-state = st; 
-zip = zipCode; 
-}
+    street = road; 
+    city = town; 
+    state = st; 
+    zip = zipCode; 
+    }
 /** 
 
 The toString method 
 @return Information about the address.
 */
-public String toString() 
-{ 
-return (street + ", " + city + 
-", " + state + " " + zip); 
-}     
+public String toString() { 
+    return (street + ", " + city + ", " + state + " " + zip); 
+    }     
 }
