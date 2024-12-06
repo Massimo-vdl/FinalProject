@@ -14,7 +14,7 @@ public CreditCard(Person owner, Money creditLimit){
     this.balance = new Money(0);
     this.creditLimit = new Money (creditLimit);
 }
-
+//getters and setters 
 public Money getBalance(){
     return this.balance;
 }
@@ -22,11 +22,11 @@ public Money getBalance(){
 public Money getCreditLimit(){
     return new Money(this.creditLimit);
 }
-
+//retrieving the information from the person 
 public String getPersonals(){
     return owner.toString();
-}
-public void charge(Money amount){
+}//Charging money adding to the balance 
+public void charge(Money amount){ //using the compare to ethod to see if the charge exceeds the limit
     if (amount.compareTo(getCreditLimit().subtract(getBalance())) == 1) {
         System.out.println("Exceeds credit limit");
     } else {

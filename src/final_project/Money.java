@@ -88,8 +88,7 @@ else if (this.cents > amount.cents)
 else 
     value = 0; 
 return value; 
-} 
-// ADD LINES FOR TASK #2 HERE 
+}  
 @Override
 public boolean equals(Object obj){
     if (this == obj){
@@ -98,8 +97,8 @@ public boolean equals(Object obj){
     if (obj == null|| getClass() != obj.getClass()){ //incase object does not exist
         return false;
     }
-    Money copy = (Money) obj;
-    return this.dollars == copy.dollars && this.cents == copy.cents; //checking that copied dollars = dollars and copied cents = cents
+    Money copy = (Money) obj; //checking that copied dollars = dollars and copied cents = cents
+    return this.dollars == copy.dollars && this.cents == copy.cents; 
 }
 @Override
 public String toString(){
